@@ -15,7 +15,7 @@ func Solution(A []int) int {
     }
     sumL := A[0]
     min := int(math.Abs(float64(sumL) - float64(sumR)))
-    for i := 1; i < len(A)-1; i++ {
+    for i := 1; i < len(A); i++ {
         diff := int(math.Abs(float64(sumL) - float64(sumR)))
         if diff < min {
             min = diff
